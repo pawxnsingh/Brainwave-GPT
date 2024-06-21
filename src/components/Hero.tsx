@@ -1,4 +1,5 @@
 import { ScrollParallax } from "react-just-parallax";
+import CompanyLogos from "./CompanyLogos";
 import Generating from "./Generating";
 import Notification from "./Notification";
 
@@ -21,7 +22,7 @@ const Hero = () => {
          id="hero"
       >
          <div className="container relative" ref={parallaxRef}>
-            <div className="relative z-1 max-w-[62rem] mx-auto text-center mb-[4rem] md:mb-20 lg:mb-[6rem]">
+            <div className="relative z-1 max-w-[62rem] mx-auto text-center mb-[4rem] md:mb-20 lg:mb-[6rem] select-none">
                <h1 className="h1 mb-6">
                   Explore the Possibilities of&nbsp;AI&nbsp;Chatting with{` `}
                   <span className="inline-block relative">
@@ -104,6 +105,7 @@ const Hero = () => {
                </div>
                <BackgroundCircles parallaxRef={parallaxRef} />
             </div>
+            <CompanyLogos className="hidden relative z-10 mt-20 lg:block "/>
          </div>
          <BottomLine />
       </Section>
