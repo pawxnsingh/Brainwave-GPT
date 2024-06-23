@@ -8,6 +8,7 @@ export default {
       "./src/**/*.{js,ts,jsx,tsx}",
       "./public/assets/**/*.{js,ts,jsx,tsx}",
    ],
+   // The theme section is where you define your color palette, fonts, type scale, border sizes, breakpoints — anything related to the visual design of your site.
    theme: {
       extend: {
          colors: {
@@ -133,11 +134,13 @@ export default {
                   {},
             },
          });
+
          addUtilities({
             ".tap-highlight-color": {
                "-webkit-tap-highlight-color": "rgba(0, 0, 0, 0)",
             },
          });
+
       }),
    ],
 };

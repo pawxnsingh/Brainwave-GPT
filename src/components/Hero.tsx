@@ -1,21 +1,22 @@
+import { useRef } from "react";
 import { ScrollParallax } from "react-just-parallax";
+
 import CompanyLogos from "./CompanyLogos";
 import Generating from "./Generating";
 import Notification from "./Notification";
+import Section from "./Section";
+import Button from "./Button";
 
 import { Gradient, BackgroundCircles, BottomLine } from "./design/Hero";
 import { curve, heroBackground, robot } from "../assets";
 import { heroIcons } from "../constants";
-import Section from "./Section";
-import Button from "./Button";
-import { useRef } from "react";
 
 const Hero = () => {
    const parallaxRef = useRef(null);
 
    return (
       <Section
-         className="pt-[12rem] -mt-[5.25rem]"
+         className="pt-[12rem] -mt-[5rem]"
          crosses
          crossesOffset="lg:translate-y-[5.25rem]"
          customPaddings
@@ -105,7 +106,7 @@ const Hero = () => {
                </div>
                <BackgroundCircles parallaxRef={parallaxRef} />
             </div>
-            <CompanyLogos className="hidden relative z-10 mt-20 lg:block "/>
+            <CompanyLogos className="hidden relative z-10 mt-20 lg:block " />
          </div>
          <BottomLine />
       </Section>

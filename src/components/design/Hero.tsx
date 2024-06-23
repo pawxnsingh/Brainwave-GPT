@@ -3,6 +3,7 @@ import { MouseParallax } from "react-just-parallax";
 
 import PlusSvg from "../../assets/svg/PlusSvg";
 
+// this is card like structure in hero Section
 export const Gradient = () => {
    return (
       <>
