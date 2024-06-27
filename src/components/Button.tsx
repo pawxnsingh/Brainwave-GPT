@@ -1,7 +1,7 @@
 import ButtonSvg from "../assets/svg/ButtonSvg";
 // inline-flex <- need to filled in the space
 const Button = ({ className, href, children, onClick, px, white }: any) => {
-   const classes = `button relative     item-center justify-center h-11 transition-colors hover:text-color-1 ${
+   const classes = `button relative flex item-center justify-center h-11 transition-colors hover:text-color-1 ${
       px || "px-7"
    } ${white ? "text-n-8" : "text-n-1"} ${className || ""}`;
 

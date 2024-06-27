@@ -42,7 +42,7 @@ const Hero = () => {
                   Unleash the power of AI within Brainwave. Upgrade your
                   productivity with Brainwave, the open AI chat app.
                </p>
-               <Button className={``} white={true}>
+               <Button className={`left-[50%] -translate-x-[50%]`} white>
                   Get Started
                </Button>
             </div>
