@@ -1,6 +1,6 @@
 import { check, smallSphere, stars } from "../assets";
 import Section from "./Section";
-import brackets from "../assets/svg/Brackets";
+import Heading from "./Heading";
 import { pricing } from "../constants";
 import Button from "./Button";
 // import {}src\assets\4-small.png
@@ -22,13 +22,12 @@ const Pricing = () => {
                   <img src={stars} alt="spiral cicle" />
                </div>
             </div>
-            {/* this is heading and title and tagline */}
-            <h4 className="h4 body-2 uppercase flex items-center text-n-3 lg:justify-center ">
-               {brackets("left")}
-               <span className="mx-3">GET STARTED WITH BRAINWAVE </span>
-               {brackets("right")}
-            </h4>
-            <h1 className="h2 mt-3 lg:text-center">Pay once, use forever</h1>
+
+            <Heading
+               className="lg:justify-center"
+               tagline="GET STARTED WITH BRAINWAVE"
+               heading="Pay once, use forever"
+            />
 
             {/* this is the pricing section */}
             <div className="flex gap-[1rem] mt-16 max-lg:flex-wrap">
@@ -86,6 +85,15 @@ const Pricing = () => {
                      </ul>
                   </div>
                ))}
+            </div>
+            {/* this is for more pricing */}
+            <div className=" text-center mt-9  leading-10">
+               <a
+                  className="text-xs uppercase border-b tracking-wider font-code font-bold"
+                  href="/pricing"
+               >
+                  See the Full Details
+               </a>
             </div>
          </div>
       </Section>

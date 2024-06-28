@@ -1,4 +1,5 @@
 import Section from "./Section";
+import Heading from "./Heading";
 import { check } from "../assets";
 import { brainwaveServices, brainwaveServicesIcons } from "../constants";
 import Generating from "./Generating";
@@ -9,13 +10,10 @@ const Services = () => {
    return (
       <Section id="Services">
          <div className="container relative">
-            {/* this is the heading tag */}
-            <div className="md:text-center">
-               <h2 className="h2">Generative AI made for creators.</h2>
-               <p className="text-sm font-thin text-n-4 mt-3 md:text-base ">
-                  Brainwave unlocks the potential of AI-powered applications
-               </p>
-            </div>
+            <Heading
+               heading="Generative AI made for creators."
+               text="Brainwave unlocks the potential of AI-powered applications"
+            />
 
             {/* this is bento card container */}
             <div className="relative">
