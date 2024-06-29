@@ -4,6 +4,7 @@ import { roadmap } from "../constants";
 import Button from "./Button";
 import Tagline from "./Tagline";
 import { check2, grid, loading1 } from "../assets";
+import { Gradient } from "./design/Roadmap";
 
 const Roadmap = () => {
    return (
@@ -24,8 +25,9 @@ const Roadmap = () => {
                   // this is one card in the grid
                   return (
                      <div
-                        className={`md:flex even:md:translate-y-[7rem] border rounded-[2.5rem] p-0.25 border-n-8   ${item.colorful ? "bg-conic-gradient" : "bg-n-6"
-                           }`}
+                        className={`md:flex even:md:translate-y-[7rem] border rounded-[2.5rem] p-0.25 border-n-8   ${
+                           item.colorful ? "bg-conic-gradient" : "bg-n-6"
+                        }`}
                         key={item.id}
                      >
                         <div className="relative p-8 border rounded-[2.4375rem] bg-n-8 lg:p-15 overflow-hidden border-n-8">
@@ -75,12 +77,13 @@ const Roadmap = () => {
 
                               <h4 className="h4 mb-4 mt-10">{item.title}</h4>
                               <p className="body-2 text-n-4">{item.text}</p>
-
                            </div>
                         </div>
                      </div>
                   );
                })}
+
+               <Gradient />
             </div>
 
             <div className="flex justify-center mt-12 md:mt-15 xl:mt-20">
